@@ -1,0 +1,74 @@
+<!-- templates/emailapp/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #1a73e8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: teal;
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Sender App</h1>
+    <ul>
+        <li><a href="{% url 'send_email' %}">Send Email</a></li>
+        <li><a href="{% url 'view_emails' %}">View Emails</a></li>
+    </ul>
+    <footer>
+        <p>&copy; Designed and Developed by Codelost Services | <a href="https://www.example.com" target="_blank">Visit our website</a></p>
+    </footer>
+</body>
+</html>
